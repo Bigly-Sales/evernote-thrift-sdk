@@ -1,14 +1,32 @@
 {
     "name": "sikandarm/evernote-thrift-sdk",
     "description": "Evernote Thrift SDK for PHP",
-    "type": "library",
+    "keywords": ["evernote", "thrift", "sdk"],
     "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sikandar"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
     "autoload": {
         "psr-4": {
-            "Sikandarm\\EvernoteThriftSdk\\": "src/"
+            "EvernoteThrift\\": "gen-php/"
         }
     },
-    "require": {
-        "php": ">=7.4"
-    }
+    "scripts": {
+        "post-install-cmd": [
+            "@php artisan evernote:generate-thrift"
+        ],
+        "post-update-cmd": [
+            "@php artisan evernote:generate-thrift"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
