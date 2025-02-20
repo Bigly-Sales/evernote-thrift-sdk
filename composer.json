@@ -1,5 +1,5 @@
 {
-    "name": "sikandarm/evernote-thrift-sdk",
+    "name": "biglysales/evernote-thrift-sdk",
     "description": "Evernote Thrift SDK for PHP",
     "keywords": ["evernote", "thrift", "sdk"],
     "license": "MIT",
