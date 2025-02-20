@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "EvernoteThrift\\": "gen-php/"
+            "EDAM\\": "src/gen-php/EDAM/"
         }
     },
     "scripts": {
