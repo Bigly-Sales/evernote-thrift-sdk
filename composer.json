@@ -1,0 +1,14 @@
+{
+    "name": "sikandarm/evernote-thrift-sdk",
+    "description": "Evernote Thrift SDK for PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sikandarm\\EvernoteThriftSdk\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}
